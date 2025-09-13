@@ -12,7 +12,7 @@ export interface TaskItem {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:5000/api/tasks';
+  private apiUrl = 'https://taskmanager-api-fde8a4cpcqhgchg2.westeurope-01.azurewebsites.net/api/tasks'; //'http://localhost:5000/api/tasks'
   
   // Signal to hold tasks
   tasks = signal<TaskItem[]>([]);
