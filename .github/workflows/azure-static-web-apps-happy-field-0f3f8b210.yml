@@ -42,7 +42,7 @@ jobs:
           action: "upload"
           app_location: "/"
           api_location: ""
-          output_location: "dist/task-manager-app"
+          output_location: "dist/task-manager-app/browser"
 
       # Force job to succeed if the only failure was cleanup
       - name: Ignore cleanup error
@@ -62,3 +62,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_FIELD_0F3F8B210 }}
           action: "close"
+
